@@ -1,6 +1,11 @@
 @import "variables";
 @import "../node_modules/bootstrap/scss/bootstrap.scss";
 
+// Navbar
+nav.bg-dark {
+  background-color: #383838 !important;
+}
+
 // Home page-parallax scrolling
 body,
 html {
@@ -24,7 +29,7 @@ html {
 }
 .pimg2 {
   background-image: url("/img/olymap.jpg");
-  min-height: 400px;
+  min-height: 600px;
 }
 .pimg3 {
   background-image: url("/img/trees.jpg");
