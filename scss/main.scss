@@ -14,6 +14,9 @@ html {
   background-position: center;
   background-size: cover;
   background-repeat: no-repeat;
+  // remove effect
+  // fixed = parallax   scroll = normal
+  background-attachment: fixed;
 }
 .pimg1 {
   background-image: url("/img/bbimage.jpg");
@@ -26,4 +29,38 @@ html {
 .pimg3 {
   background-image: url("/img/trees.jpg");
   min-height: 400px;
+}
+.section {
+  text-align: center;
+  padding: 50px 80px;
+}
+.section-primary {
+  background-color: lighten($color: $primary, $amount: 5%);
+}
+.section-secondary {
+  background-color: $secondary;
+}
+.section-success {
+  background-color: lighten($color: $success, $amount: 15%);
+}
+.ptext {
+  position: absolute;
+  top: 50%;
+  width: 100%;
+  text-align: center;
+  color: #fff;
+  font-size: 27px;
+  letter-spacing: 8px;
+  text-transform: uppercase;
+}
+.ptext .border {
+  padding: 20px;
+  border: none !important;
+}
+@media (max-width: 991px) {
+  .pimg1,
+  .pimg2,
+  .pimg3 {
+    background-attachment: scroll;
+  }
 }
